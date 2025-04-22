@@ -1,10 +1,10 @@
-public class SavingAccount extends Account{
+/* public class SavingsAccount extends Account{
     // attribute 
     private double addBalance;
     private double interest;
 
     // constructor
-    SavingAccount(String type, double balance, String accountHolder){
+    SavingsAccount(String type, double balance, String accountHolder){
         super(type, balance, accountHolder);
     }
 
@@ -14,4 +14,4 @@ public class SavingAccount extends Account{
         System.out.println("Balance\t: " + this.getBalance());
         System.out.println("Account Holder\t: " + this.getAccountHolder() + "\n");
     }
-}
+} */

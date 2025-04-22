@@ -6,11 +6,8 @@ public class Main{
         c_account1.setAccountHolder("Joel");
         c_account1.display();
 
-        SavingAccount s_account1 = new SavingAccount("Saving", 0, null);
-        s_account1.setBalance(1000);
-        s_account1.setAccountHolder("Ellie");
-        s_account1.display();
-
+        c_account1.withdraw(21000);
+        c_account1.display();
 
 
     }
