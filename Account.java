@@ -2,6 +2,7 @@ public abstract class Account {
     // attribute
     private String type;
     private String accountHolder;
+    private double balance;
 
     // constructor
     Account(String type, String accountHolder){
@@ -16,6 +17,10 @@ public abstract class Account {
 
     public String getAccountHolder(){
         return this.accountHolder;
+    }
+
+    public double getBalance(){
+        return this.balance;
     }
 
     // setter

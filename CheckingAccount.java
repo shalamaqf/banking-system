@@ -1,6 +1,6 @@
-public class CheckingAccount extends Account{
+public class CheckingAccount extends Account{ 
     // attribute
-    private double balance;
+    private double balance = 0;
     private double overdraft = 500000.0;
 
     // constructor
@@ -41,4 +41,12 @@ public class CheckingAccount extends Account{
         System.out.println("Overdraft limit exceeded!\n");
        }
     }
+
+    // function for add balance
+    public void addBalance(double amount){
+        this.balance += amount;
+        System.out.println("Successfully added balance!");
+        System.out.println("Current Balance\t: " + this.balance);
+    }
+
 }
