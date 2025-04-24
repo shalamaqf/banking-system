@@ -30,6 +30,7 @@ public abstract class Account {
 
     // abstract method 
     public abstract void display();
-    public abstract void transfer(double amount);
+    public abstract void transfer(double amount, Account otherAccount);
     public abstract void withdraw(double amount);
+    public abstract void addBalance(double amount);
 }

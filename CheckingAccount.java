@@ -22,9 +22,10 @@ public class CheckingAccount extends Account{
     }
 
     // function for money transfer
-    public void transfer(double amount){
+    public void transfer(double amount, Account otherAccount){
         if (this.balance > amount){
              this.balance -= amount;
+             otherAccount.addBalance(amount);
              System.out.println("Money successfully transferred!\n");
         }else{
             System.out.println("Insufficient balance!\n");
@@ -46,7 +47,7 @@ public class CheckingAccount extends Account{
     public void addBalance(double amount){
         this.balance += amount;
         System.out.println("Successfully added balance!");
-        System.out.println("Current Balance\t: " + this.balance);
+        System.out.println("Current Balance\t: " + this.balance + "\n");
     }
 
 }
